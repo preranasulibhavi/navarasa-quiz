@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navarasa Artwork Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+    <h1 class="text-2xl font-bold text-center mb-4">What Does the Art Reveal? Quiz Your Insight!</h1>
+    <img src="src/navarasa.png" alt="Navarasa Artwork with 1-9" class="w-full h-auto mb-4 rounded">
+    <p class="text-center mb-4">Select a Rasa emotion for each number based on the artwork:</p>
+    <div id="quiz-form" class="space-y-4">
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">1:</label>
+        <select id="select-1" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">2:</label>
+        <select id="select-2" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">3:</label>
+        <select id="select-3" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">4:</label>
+        <select id="select-4" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">5:</label>
+        <select id="select-5" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">6:</label>
+        <select id="select-6" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">7:</label>
+        <select id="select-7" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">8:</label>
+        <select id="select-8" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <label class="w-8 font-semibold">9:</label>
+        <select id="select-9" class="flex-1 p-2 border rounded">
+          <option value="">Select a Rasa</option>
+          <option value="hasya">Hasya (laughter)</option>
+          <option value="raudra">Raudra (anger)</option>
+          <option value="veera">Veera (courage/heroism)</option>
+          <option value="adbhuta">Adbhuta (wonder)</option>
+          <option value="bibhatsa">Bibhatsa (disgust)</option>
+          <option value="shanta">Shanta (peace/tranquility)</option>
+          <option value="karuna">Karuna (compassion/sorrow)</option>
+          <option value="bhayanaka">Bhayanaka (fear)</option>
+          <option value="shringara">Shringara (love/beauty)</option>
+        </select>
+      </div>
+    </div>
+    <button id="submit-btn" class="w-full bg-blue-500 text-white p-2 rounded mt-4 hover:bg-blue-600">Submit</button>
+    <p id="result" class="text-center mt-4 hidden"></p>
+    <p id="quiz-takers" class="text-center mt-2 hidden"></p>
+    <div id="answers" class="mt-4 hidden bg-gradient-to-r from-blue-100 to-purple-100 p-4 rounded-lg">
+      <p class="font-semibold text-lg mb-2">Correct Answers:</p>
+      <div id="answers-list" class="space-y-2"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('submit-btn').addEventListener('click', async () => {
+      const correctAnswers = {
+        1: 'hasya',
+        2: 'raudra',
+        3: 'veera',
+        4: 'adbhuta',
+        5: 'bibhatsa',
+        6: 'shanta',
+        7: 'karuna',
+        8: 'bhayanaka',
+        9: 'shringara'
+      };
+
+      const rasaDescriptions = {
+        hasya: 'Hasya (laughter) - The emotion of laughter and amusement.',
+        raudra: 'Raudra (anger) - The emotion of intense anger or fury.',
+        veera: 'Veera (courage/heroism) - The emotion of bravery and heroism.',
+        adbhuta: 'Adbhuta (wonder) - The emotion of wonder and amazement.',
+        bibhatsa: 'Bibhatsa (disgust) - The emotion of disgust or repulsion.',
+        shanta: 'Shanta (peace/tranquility) - The emotion of calmness and tranquility.',
+        karuna: 'Karuna (compassion/sorrow) - The emotion of compassion and empathy.',
+        bhayanaka: 'Bhayanaka (fear) - The emotion of fear or anxiety.',
+        shringara: 'Shringara (love/beauty) - The emotion of love and beauty.'
+      };
+
+      let score = 0;
+      const answersDiv = document.getElementById('answers');
+      const answersList = document.getElementById('answers-list');
+      answersList.innerHTML = '';
+      answersDiv.classList.remove('hidden');
+
+      for (let i = 1; i <= 9; i++) {
+        const select = document.getElementById(`select-${i}`);
+        const userSelection = select.value;
+        const isCorrect = userSelection === correctAnswers[i];
+
+        if (isCorrect) {
+          score++;
+          select.classList.remove('border-red-500', 'bg-red-100');
+          select.classList.add('border-green-500', 'bg-green-100');
+        } else {
+          select.classList.remove('border-green-500', 'bg-green-100');
+          select.classList.add('border-red-500', 'bg-red-100');
+        }
+
+        const answerDiv = document.createElement('div');
+        answerDiv.className = 'flex items-center bg-white p-3 rounded-md shadow-sm hover:scale-105 transition-transform duration-200';
+        answerDiv.innerHTML = `
+          <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+            <span><strong>${i}:</strong> ${rasaDescriptions[correctAnswers[i]]}</span>
+          `;
+        answersList.appendChild(answerDiv);
+
+        select.disabled = true;
+      }
+
+      const result = document.getElementById('result');
+      result.textContent = `Your Score: ${score}/9`;
+      result.classList.remove('hidden');
+
+      // Trigger confetti animation
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#ff0000', '#00ff00', '#0000ff', '#ffff00']
+      });
+
+      // Disable submit button
+      document.getElementById('submit-btn').disabled = true;
+
+      // Track quiz submission
+      try {
+        await fetch('https://script.google.com/macros/s/AKfycbwX3QLy-9zSvP4trUZ2rFl0D23zi9NtEwpSfzBusmWMWqagPDvcnqeqsbgWfrdLrOoabw/exec', {
+          method: 'POST',
+          mode: 'no-cors'
+        });
+        const countResponse = await fetch('https://script.google.com/macros/s/AKfycbwX3QLy-9zSvP4trUZ2rFl0D23zi9NtEwpSfzBusmWMWqagPDvcnqeqsbgWfrdLrOoabw/exec?getCount=true');
+        const countData = await countResponse.json();
+        document.getElementById('quiz-takers').textContent = `Quiz taken by ${countData.count} user${countData.count === 1 ? '' : 's'}`;
+        document.getElementById('quiz-takers').classList.remove('hidden');
+      } catch (error) {
+        console.error('Error tracking quiz submission:', error);
+        document.getElementById('quiz-takers').textContent = 'Unable to load quiz takers count';
+        document.getElementById('quiz-takers').classList.remove('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
